@@ -2,12 +2,14 @@
 
 html {
     background-color: #232A33;
+    max-width: 100%;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 li {
@@ -18,21 +20,23 @@ a {
     text-decoration: none;
 }
 
+.hero-section {
+    align-items: center;
+}
+
 .hero-img {
     position: absolute;
     z-index: -100;
     opacity: 30%;
+    max-width: 100%;
 }
-
-/* .header {
-    border-bottom: 1px solid #E2E8F0;
-} */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    text-transform: uppercase;
 }
 
 .nav-menu { 
@@ -53,7 +57,7 @@ a {
 }
 
 .nav-link:hover{
-	color: #482ff7;
+	color: #e67f6c;
     transition: 0.2s all;
 }
 
@@ -85,6 +89,7 @@ a {
     width: 43rem;
     top: 2.5rem;
     left: 55rem;
+    opacity: 80%;
     transform: scale(-1, 1);
 }
 
@@ -101,4 +106,68 @@ a {
 .take-off-sec p {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #FFFFFF;
+}
+
+.reuse-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 3rem;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    align-content: center;
+    font-family: "Inter", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.arrow-icon{
+    fill: #FFFFFF;
+}
+
+.reuse-btn:hover {
+    color: #e67f6c;
+    border: 1.5px solid #e67f6c;
+    transition: 0.2s all;
+}
+
+.reuse-btn:hover .arrow-icon {
+    fill: #e67f6c;
+    transition: 0.2s;
+}
+
+.b2b-sec {
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.b2b-sec h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 3.5rem;
+	font-weight: 700;
+    text-transform: uppercase;
+}
+
+.b2b-sec p {
+    margin-top: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #F2F2F2;
+    font-size:1.25rem;
+	font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.b2b-sec span {
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.airplane-sec{
+    width: 80%;
 }
