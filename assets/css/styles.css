@@ -18,15 +18,15 @@ a {
     text-decoration: none;
 }
 
-.hero-img{
+.hero-img {
     position: absolute;
-    z-index: -1;
+    z-index: -100;
     opacity: 30%;
 }
 
-.header{
+/* .header {
     border-bottom: 1px solid #E2E8F0;
-}
+} */
 
 .navbar {
     display: flex;
@@ -62,4 +62,43 @@ a {
 	font-size: 2.1rem;
 	font-weight: 700;
 	color: #FFFFFF;
+}
+
+.take-off-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.take-off-img {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    padding-top: 8rem;
+}
+
+.top-right-cloud {
+    position: absolute;
+    z-index: -1;
+    height: 25rem;
+    width: 43rem;
+    top: 2.5rem;
+    left: 55rem;
+    transform: scale(-1, 1);
+}
+
+.bottom-left-cloud {
+    position: absolute;
+    z-index: 10;
+    height: 30rem;
+    width: 70rem;
+    top: 10rem;
+    left: -28rem;
+    opacity: 90%;
+}
+
+.take-off-sec p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
 }
