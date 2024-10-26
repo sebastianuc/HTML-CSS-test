@@ -20,15 +20,12 @@ a {
     text-decoration: none;
 }
 
-.hero-section {
-    align-items: center;
-}
-
 .hero-img {
     position: absolute;
     z-index: -100;
     opacity: 30%;
     max-width: 100%;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
 }
 
 .navbar {
@@ -57,9 +54,10 @@ a {
 }
 
 .nav-link:hover{
-	color: #e67f6c;
+	color: #F89485;
     transition: 0.2s all;
 }
+
 
 .nav-logo {
     font-family: "Inter", sans-serif;
@@ -71,7 +69,6 @@ a {
 .take-off-sec {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -116,7 +113,6 @@ a {
     border-radius: 20px;
     background-color: transparent;
     padding: 1rem 2rem;
-    align-content: center;
     font-family: "Inter", sans-serif;
 	font-size: 0.8rem;
 	font-weight: 500;
@@ -129,18 +125,17 @@ a {
 }
 
 .reuse-btn:hover {
-    color: #e67f6c;
-    border: 1.5px solid #e67f6c;
+    color: #F89485;
+    border: 1.5px solid #F89485;
     transition: 0.2s all;
 }
 
 .reuse-btn:hover .arrow-icon {
-    fill: #e67f6c;
+    fill: #F89485;
     transition: 0.2s;
 }
 
 .b2b-sec {
-    box-sizing: border-box;
     width: 60%;
     margin: auto;
     margin-top: 6rem;
@@ -163,11 +158,172 @@ a {
     line-height: 2.5rem;
 }
 
-.b2b-sec span {
+.b2b-sec em {
     display: inline-block;
     margin-top: 3rem;
+    font-style: normal;
 }
 
-.airplane-sec{
+.ap-sec{
     width: 80%;
+    /* justify-content: left;
+    display: inline-block; */
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px; /* -- Temporary placeholder -- */
+    background-color: #000;
+}
+
+.ap-sec-col{
+    width: 100%;
+    flex-direction: column;
+}
+
+.ap-sec-row{
+    flex-direction: row;
+}
+
+.testimony-sec {
+    width: 80%;
+    margin: auto;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimony-logo {
+    align-self: center;
+    max-height: 70px;
+    max-width: 138px;
+}
+
+.testimony-text {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-self: center;
+    width: 57%;
+}
+
+blockquote {
+    border: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 2.25rem;
+	font-weight: 700;
+    line-height: 3.1rem;
+}
+
+blockquote:before {
+    position: absolute;
+    transform: translate(-6rem, 4rem);
+    content: open-quote;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 300px;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.testimony-text em {
+    color: #F89485;
+    font-style: normal;
+}
+
+.test-name {
+    width: 57%;
+}
+
+.test-name p {
+    margin-top: 2rem;
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+	font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.test-name em {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 1rem;
+	font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.show-up-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.show-up-text {
+    width: 80%;
+    padding: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 3rem;
+	font-weight: 700;
+    line-height: 5.5rem;
+}
+
+.show-up-text em {
+    display: block;
+    padding: 0.1rem;
+    color: #F89485;
+    font-style: normal;
+}
+
+.show-up-icon {
+    width: 20%;
+    text-align: end;
+    margin-top: auto;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.caroussel {
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px; /* -- Temporary placeholder -- */
+    background-color: #000;
+}
+
+.b2b-ag-sec {
+    padding-top: 5rem;
+}
+
+.b2b-bg-txt {
+    padding: 1rem;
+    position: absolute;
+    white-space: nowrap;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    opacity: 10%;
+    font-style: normal;
+    font-size: 3rem;
+	font-weight: 600;
+    line-height: 5.5rem;
+}
+
+.b2b-ag-txt {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 3rem;
+	font-weight: 700;
+    line-height: 5.5rem;
+}
+
+.b2b-ag-txt em {
+    padding: 1rem;
+    font-style: normal;
 }
