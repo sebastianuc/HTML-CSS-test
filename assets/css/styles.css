@@ -70,6 +70,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* overflow-x: clip; */
 }
 
 .take-off-img {
@@ -158,10 +159,9 @@ a {
     line-height: 2.5rem;
 }
 
-.b2b-sec em {
+.b2b-sec span {
     display: inline-block;
     margin-top: 3rem;
-    font-style: normal;
 }
 
 .ap-sec{
@@ -226,9 +226,8 @@ blockquote:before {
     opacity: 50%;
 }
 
-.testimony-text em {
+.testimony-text span {
     color: #F89485;
-    font-style: normal;
 }
 
 .test-name {
@@ -245,11 +244,10 @@ blockquote:before {
     line-height: 2.5rem;
 }
 
-.test-name em {
+.test-name span {
     display: block;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #FFFFFF;
-    font-style: normal;
     font-size: 1rem;
 	font-weight: 400;
     line-height: 1.25rem;
@@ -273,11 +271,10 @@ blockquote:before {
     line-height: 5.5rem;
 }
 
-.show-up-text em {
+.show-up-text span {
     display: block;
-    padding: 0.1rem;
     color: #F89485;
-    font-style: normal;
+    overflow: hidden;
 }
 
 .show-up-icon {
@@ -298,32 +295,174 @@ blockquote:before {
 }
 
 .b2b-ag-sec {
-    padding-top: 5rem;
+    margin-top: 5rem;
 }
 
 .b2b-bg-txt {
-    padding: 1rem;
     position: absolute;
     white-space: nowrap;
+    z-index: -1;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #FFFFFF;
     opacity: 10%;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 6rem;
 	font-weight: 600;
-    line-height: 5.5rem;
+    line-height: 10rem;
+    text-transform: uppercase;
+}
+
+.b2b-bg-txt h2 {
+    overflow: hidden;
 }
 
 .b2b-ag-txt {
     font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    z-index: 1;
     color: #FFFFFF;
     font-style: normal;
     font-size: 3rem;
 	font-weight: 700;
     line-height: 5.5rem;
+    text-transform: uppercase;
 }
 
-.b2b-ag-txt em {
-    padding: 1rem;
+.b2b-ag-txt span {
+    display: block;
+    padding-left: 6rem;
+    color: #F89485;
+    overflow: hidden;
+}
+
+.under-b2b {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.under-b2b-col-l {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0 8rem 8rem 8rem;
+}
+
+.under-b2b-col-l p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+	font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.under-b2b-col-r {
+    width: 50%;
+    flex-direction: column;
+}
+
+.accordion-item {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    border-bottom: 1px solid #FFFFFF;
+    flex-direction: row;
+}
+
+.accordion-item:hover {
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+.accordion-item h3 {
+    width: 60%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.15rem;
+    letter-spacing: 0.02rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.accordion-icon {
+    width: 40%;
+    text-align: end;
+    margin-top: auto;
+}
+
+.with-you-sec {
+    margin: auto;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.with-you-sec P {
+    display: block;
+    width: 50%;
+    align-self: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-size:1.25rem;
+	font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.wy-bg-txt {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    opacity: 10%;
     font-style: normal;
+    font-size: 8rem;
+	font-weight: 600;
+    line-height: 10rem;
+    text-transform: uppercase;
+}
+
+.with-txt {
+    display: flex;
+    height: 50%;
+    align-items: end;
+    margin-right: 30rem;
+}
+
+.you-txt {
+    height: 50%;
+    margin-left: 40rem;
+}
+
+.with-txt h2, .you-txt h2 {
+    overflow: hidden;
+}
+
+.wy-fr-txt {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* padding-top: 5rem; */
+    z-index: 1;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 3rem;
+	font-weight: 700;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+
+.wy-fr-txt h2 {
+    overflow: hidden;
+    text-align: center;
 }
