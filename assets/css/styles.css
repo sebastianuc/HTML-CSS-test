@@ -9,7 +9,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 li {
@@ -529,10 +529,18 @@ blockquote:before {
 .section-bg-color {
     background-color: #181D24;
     padding-top: 5rem;
+    background-image: url(../img/marketing-sec-img.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: right -20rem;
+    background-position-y: bottom;
+    overflow-x: clip;
 }
 
 .marketing-sec {
     text-align: start;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #FFFFFF;
     font-size: 2.5rem;
@@ -549,7 +557,7 @@ blockquote:before {
 
 .market-paraph {
     width: 40%;
-    padding: 2rem;
+    padding: 3rem;
     text-align: start;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #FFFFFF;
@@ -567,3 +575,92 @@ blockquote:before {
 .market-paraph span {
     display: block;
 }
+
+.feel-sec {
+    display: flex;
+    padding-top: 15rem;
+    justify-content: center; 
+}
+
+.feel-bg-txt {
+    position: absolute;
+    white-space: nowrap;
+    z-index: -1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    opacity: 10%;
+    font-style: normal;
+    font-size: 12rem;
+	font-weight: 600;
+    line-height: 10rem;
+    text-transform: uppercase;
+}
+
+.feel-bg-txt h2 {
+    overflow: visible;
+}
+
+.feel-ft-txt {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 3rem;
+    z-index: 1;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 6rem;
+	font-weight: 700;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+
+.feel-ft-txt span {
+    display: block;
+    padding-top: 3rem;
+    padding-left: 6rem;
+    font-size: 5rem;
+    color: #F89485;
+    overflow: visible;
+}
+
+.under-feel {
+    display: flex;
+    padding-top: 5rem;
+    width: 100%;
+    flex-direction: row;
+} 
+
+.feel-img {
+    margin: 0;
+    width: 40%;
+    background-image: url(../img/under-feel-img.png);
+    background-size: cover;
+}
+
+.feel-paraph {
+    width: 60%;
+    margin: 0;
+    padding: 5rem 7rem 5rem 7rem;
+}
+
+.feel-paraph h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 2.5rem;
+	font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.feel-paraph p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 3rem;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 1.25rem;
+	font-weight: 400;
+    line-height: 2.5rem;
+}
+/* 
+form 
+form-row 
+form-col-half 
+*/
