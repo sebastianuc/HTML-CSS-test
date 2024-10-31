@@ -28,6 +28,12 @@ a {
     mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -817,4 +823,52 @@ blockquote:before {
     backdrop-filter: blur(600px); */
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10rem;
+}
 
+.footer-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.bg-img-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: #1B2128;
+    border-radius: 20px;
+}
+
+.footer-col p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+.footer-col span {
+    display: block;
+}
+
+.foot-link{
+    font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: #F89485;
+    padding-bottom: 1rem;
+}
