@@ -380,12 +380,12 @@ blockquote:before {
     margin-right: 5rem;
     border-bottom: 1px solid #FFFFFF;
     flex-direction: row;
+    transition: 0.2s all ease-in-out;
 }
 
 .accordion-item:hover {
     border: 1px solid #FFFFFF;
     border-radius: 10px;
-    transition: 0.2s all;
 }
 
 .accordion-item h3 {
@@ -404,6 +404,24 @@ blockquote:before {
     width: 40%;
     text-align: end;
     margin-top: auto;
+}
+
+.accordion-content {
+    display: none;
+    align-self: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+  
+.toggleIcon {
+    transform: rotate(90deg);
+}
+
+.accordion-active {
+    display: block;
 }
 
 .with-you-sec {
