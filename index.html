@@ -2,10 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="/assets/icons/airplane.svg" type="imgae/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
+    
     <title>Test page</title>
 </head>
 <body>
@@ -81,7 +82,10 @@
         </div>
 
         <div class="testimony-sec">
-            <div class="bg-blur-lights"></div>
+            <div class="bg-blur-tl"></div> <!-- Background blur light effect Top Left -->
+            <div class="bg-blur-bl"></div> <!-- Background blur light effect Bottom Left -->
+            <div class="bg-blur-tr"></div> <!-- Background blur light effect Top Right -->
+            <div class="bg-blur-br"></div> <!-- Background blur light effect Bottom Right -->
             <img class="testimony-logo" src="./assets/img/testimony-logo.png" alt="isco logo">
             <div class="testimony-text">
                 <blockquote>
@@ -130,11 +134,9 @@
                 <div class="accordion-wrapper">
                     <div class="accordion-item">
                         <h3>STRATEGIC revenue generation ADVISORY</h3>
-                        <div class="accordion-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" fill="white"/>
-                            </svg>
-                        </div>
+                        <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" fill="white"/>
+                        </svg>
                     </div>
                     <p class="accordion-content">
                         Lorem ipsum, dolor sit amet consectetur adipiscing elit. Et neque, velit
@@ -194,6 +196,7 @@
             </div>
         </div>
         <div class="with-you-sec">
+            <div class="wy-bg-blur"></div>
             <div class="wy-bg-txt">
                 <div class="with-txt">
                     <h2>with</h2>
@@ -283,9 +286,7 @@
         </div>
 
         <div class="form-sec">
-            <div class="form-light-effect">
-                
-            </div>
+            <div class="bg-form-blur"></div>
             <div class="form">
                 <h2>GET IN TOUCH WITH <span>OUR TEAM</span></h2>
                 <div class="input-area">
@@ -342,7 +343,7 @@
                 </div>
                 <div class="footer-col">
                     <!--Contact Us-->
-                    <a class="foot-link">Our services</a>
+                    <a class="foot-link">CONTACT US</a>
                     <p>3116 W Cortland
                         <span>Chicago, IL 60647</span></p>
                     <p>630.870.2141

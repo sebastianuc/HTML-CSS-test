@@ -1,5 +1,6 @@
 // variables
 const accordionBtnToggle = document.querySelectorAll(".accordion-item");
+// const icon = document.getElementById("acc-icon");
 
 // Adding event listener to the accordion toggle button
 for (i of accordionBtnToggle) {
